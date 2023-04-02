@@ -8,10 +8,41 @@
     }
     &-iframe{
         overflow-y: hidden;
+        @media (min-width: 1920px) {
+            margin-top: 4rem;            
+        }
     }
 }
 
 mat-icon{
     color: white;
     font-weight: bold;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.go-back{
+    align-self: self-end;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.only-one-video{
+    width: 20rem;
+    @media (min-width: 768px) {
+        width: 42rem;
+        margin: auto;
+    }
+    @media (min-width: 1200px) {
+        width: 68rem;
+    }
+    @media (min-width: 1920px) {
+        width: 112rem;
+    }
 }

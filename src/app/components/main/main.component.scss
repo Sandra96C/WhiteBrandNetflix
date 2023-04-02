@@ -1,15 +1,26 @@
 
 .content{
-	padding: 1rem 2rem;
+	padding: 1rem;
+	@media (min-width: 1200x) {
+        padding: 1rem 2rem;      
+    }
+	
 	&-header{
 		h1{
-			font-size: 6rem;
     		text-transform: uppercase;
 			text-align: center;
 			padding: 2rem;
 			color: white;
 			font-weight: bold;
-			letter-spacing: 0.25rem;
+			font-size: 2rem;
+			letter-spacing: 0.15rem;
+			@media (min-width: 768px) {
+				font-size: 4rem;
+			}
+			@media (min-width: 1200px) {
+				font-size: 6rem;   
+				letter-spacing: 0.25rem;
+			}
 		}
 	}
 	&-body{
@@ -17,21 +28,28 @@
     		text-transform: uppercase;
 			color: darkorange;
 			font-weight: bold;
-			letter-spacing: 0.5rem;
-			font-size: 2rem;
+			letter-spacing: 0.10rem;
+			@media (min-width: 768px) {
+				letter-spacing: 0.15rem;
+				font-size: 2rem;
+			}
 		}
 		&-name{
 			background-color: black;
 			h3{
 				margin: 5px;
 				color: white;
-				font-size: 1rem;
+				@media (min-width: 768px) {
+					font-size: 1rem;
+				}
 			}
 		}
 		&-name:hover{
 			background-color: #1B1212;
 			h3{
-				font-size: 1.25rem;
+				@media (min-width: 768px) {
+					font-size: 1.25rem;
+				}
 			}
 		}
 	}
@@ -45,7 +63,9 @@
 	.content-body-name{
 		background-color: #1B1212;
 		h3{
-			font-size: 1.25rem;
+			@media (min-width: 768px) {
+				font-size: 1.25rem;
+			}
 		}
 	}
 }

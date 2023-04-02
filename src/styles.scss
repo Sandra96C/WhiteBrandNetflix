@@ -5,6 +5,9 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .initial-content{
-    padding: 2rem;
-	background-color: #28282B;
+    background-color: #28282B;
+    min-width: 26rem;
+    @media (min-width: 768px) {
+        padding: 2rem;        
+    }
 }
