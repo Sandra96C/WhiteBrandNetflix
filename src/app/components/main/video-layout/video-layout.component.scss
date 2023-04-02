@@ -1,0 +1,17 @@
+.video-container{
+    h2{
+        text-transform: uppercase;
+        color: darkorange;
+        font-weight: bold;
+        letter-spacing: 0.5rem;
+        font-size: 2rem;
+    }
+    &-iframe{
+        overflow-y: hidden;
+    }
+}
+
+mat-icon{
+    color: white;
+    font-weight: bold;
+}

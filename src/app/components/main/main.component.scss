@@ -1,0 +1,51 @@
+
+.content{
+	padding: 1rem 2rem;
+	&-header{
+		h1{
+			font-size: 6rem;
+    		text-transform: uppercase;
+			text-align: center;
+			padding: 2rem;
+			color: white;
+			font-weight: bold;
+			letter-spacing: 0.25rem;
+		}
+	}
+	&-body{
+		h2{
+    		text-transform: uppercase;
+			color: darkorange;
+			font-weight: bold;
+			letter-spacing: 0.5rem;
+			font-size: 2rem;
+		}
+		&-name{
+			background-color: black;
+			h3{
+				margin: 5px;
+				color: white;
+				font-size: 1rem;
+			}
+		}
+		&-name:hover{
+			background-color: #1B1212;
+			h3{
+				font-size: 1.25rem;
+			}
+		}
+	}
+}
+
+.pointer{
+	cursor: pointer;
+}
+
+.pointer:hover{
+	.content-body-name{
+		background-color: #1B1212;
+		h3{
+			font-size: 1.25rem;
+		}
+	}
+}

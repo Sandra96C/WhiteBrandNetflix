@@ -1,0 +1,20 @@
+<div class="grid grid-row">
+    <div class="{{videos.length > 1 ? 'grid grid-cols-2 gap-10' : '' }}">
+		<div class="video-container" *ngFor="let video of videos">
+			<h2>{{video.title}}</h2>
+			<div class="video-container-iframe">
+				<!-- <vg-player (onPlayerReady)="onPlayerReady($event)">
+					<video [vgMedia]="$any(media)" #media id="singleVideo" preload="auto" controls>
+					<source [src]="sanitize(video.videoUrl)" type="video/mp4">
+					</video>
+				</vg-player> -->
+				<!-- <video src="https://www.scorebat.com/embed/NHlTVU5LVVhjeWtlQ0kyVVR0WFYwdz09/?token=NzIwNDJfMTY4MDQzNDI3MV8yMmQ4N2QyOGI1OWRmYzk5MGYwNGIyMWQyYzRhNDM5NzZjM2NkOTAy&utm_source=api&utm_medium=video&utm_campaign=apifd">
+					<source src="https://www.scorebat.com/embed/NHlTVU5LVVhjeWtlQ0kyVVR0WFYwdz09/?token=NzIwNDJfMTY4MDQzNDI3MV8yMmQ4N2QyOGI1OWRmYzk5MGYwNGIyMWQyYzRhNDM5NzZjM2NkOTAy&utm_source=api&utm_medium=video&utm_campaign=apifd">
+				</video> -->
+				<div [innerHTML]="transform(video.iframe)">
+				</div>
+			</div>
+		</div>
+	</div>
+	<mat-icon>arrow_back</mat-icon>
+</div>

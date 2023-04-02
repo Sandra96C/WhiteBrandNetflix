@@ -1,0 +1,29 @@
+<div class="content">
+    <div class="content-header">
+        <h1>Prueba Técnica</h1>
+    </div>
+    <div class="content-body mt-10">
+        <div class="grid grid-row gap-10" >
+            <div *ngFor="let compeititionName of competitions">
+                <h2>{{compeititionName}}</h2>
+                <div class="grid grid-cols-5 gap-5">
+                    <div *ngFor="let feed of getFeedsByCompetition(compeititionName)">
+                        <div class="pointer" 
+                            (click)="redirectVideoLayout(feed)" 
+                            [ngStyle]="{
+                                'background-image': 'url('+feed.thumbnail+')', 
+                                'background-repeat':'no-repeat', 
+                                'background-size':'cover',
+                                'height':'12rem',
+                                'width':'100%'
+                            }">
+                            <div class="content-body-name">
+                                <h3>{{feed.title}}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
